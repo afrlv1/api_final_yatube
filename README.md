@@ -1,23 +1,19 @@
 **Реализация API на базе Django Rest Framework**
 Для запуска проекта необходимо:
 Установить зависимости:
-
-pip install -r requirements.txt
+_pip install -r requirements.txt_
 
 Создать модели:
-
-python manage.py makemigrations
+_python manage.py makemigrations_
 
 Провести миграцию:
-
-python manage.py migrate
+_python manage.py migrate_
 
 Запустить сервер командой:
-
-python manage.py runserver
+_python manage.py runserver_
 
 Доступные методы:
-/api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
+_/api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
 
 /api/v1/posts/<id> (GET, POST, PUT, PATCH, DELETE)
 
@@ -27,7 +23,10 @@ python manage.py runserver
 
 /api/v1/group/ (GET, POST)
 
-/api/v1/follow/ (GET, POST)
+/api/v1/follow/ (GET, POST)_
 
 Для доступа к API необходимо получить токен:
-Небходимо сздать POST-запрос localhost:8000/api/v1/token/ передав поля username и password. API вернет токен.
+Для этого создать POST-запрос 
+l*ocalhost:8000/api/v1/token/* 
+передав поля username и password. 
+API вернет токен.
